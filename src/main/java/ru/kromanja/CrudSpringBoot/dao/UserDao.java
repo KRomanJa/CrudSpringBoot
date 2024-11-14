@@ -1,0 +1,16 @@
+package ru.kromanja.CrudSpringBoot.dao;
+
+
+
+import ru.kromanja.CrudSpringBoot.model.User;
+
+import java.util.List;
+
+public interface UserDao {
+    void add(User user);
+    List<User> userList();
+    void delete(int id);
+    User getUser(int id);
+    User updateUser(User user, int id);
+
+}
